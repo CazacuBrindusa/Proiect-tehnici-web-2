@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular Validare</title>
+    <link rel="stylesheet" href="formular.css">
+    <script src="formular.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Formular de Validare</h1>
+        <form id="validationForm">
+            <label for="name">Nume:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="age">Vârstă:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="color">Culoare preferată:</label>
+            <input type="color" id="color" name="color">
+
+            <div class="flex-row">
+                <label for="gender">Gen:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Masculin</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Feminin</label>
+            </div>
+
+            <label for="subscribe">Abonează-te:</label>
+            <input type="checkbox" id="subscribe" name="subscribe">
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback"></textarea>
+
+            <label for="range">Rating:</label>
+            <input type="range" id="range" name="range" min="0" max="10">
+
+            <button type="submit">Trimite</button>
+        </form>
+        <div id="message"></div>
+    </div>
+</body>
+</html>
